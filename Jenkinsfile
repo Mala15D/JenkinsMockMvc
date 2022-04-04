@@ -18,14 +18,14 @@ pipeline {
                 withSonarQubeEnv('ZensarCodeAnalysis'){
                     bat 'mvn sonar sonar'
             }
-        
+            }
     }
           stage('JaCoCo Report') {
             steps {
                jacoco()
             }
         }
-         }
+         
 }
 
 
