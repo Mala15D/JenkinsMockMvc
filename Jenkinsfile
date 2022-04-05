@@ -28,13 +28,14 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-               echo 'Building Docker Image'
+               bat 'docker build -t malas/test .'
             }
         }
         
         stage('Push Docker Image to Docker Hub') {
             steps {
-                echo 'Building Docker Image'
+                    bat 'docker login -u username -p password'
+                bat 'docker push malas/test'
             }
         }
     }
