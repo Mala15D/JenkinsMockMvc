@@ -12,7 +12,7 @@
 	<groupId>com.zensar</groupId>
 	<artifactId>WebApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>WebApp</name>
 	<description>Simple web application</description>
 	<properties>
@@ -37,6 +37,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>test</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
